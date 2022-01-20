@@ -1,7 +1,7 @@
 name: image_downloader_web
 description: Download images from url to user's device.
 version: 0.0.1
-homepage:
+repository: https://github.com/hrvojecukman/image_downloader_web
 
 environment:
   sdk: ">=2.12.0 <3.0.0"
