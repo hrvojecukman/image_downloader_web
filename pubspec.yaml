@@ -1,6 +1,6 @@
 name: image_downloader_web
 description: Download images from url to user's device.
-version: 0.0.1
+version: 0.0.2
 repository: https://github.com/hrvojecukman/image_downloader_web
 
 environment:
