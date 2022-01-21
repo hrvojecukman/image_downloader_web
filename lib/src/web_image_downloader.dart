@@ -1,8 +1,8 @@
-import 'dart:html' as html;
 import 'dart:typed_data';
 
 import 'package:flutter/painting.dart';
 import 'package:http/http.dart' as http;
+import 'package:universal_html/html.dart' as html;
 
 class WebImageDownloader {
   Future<void> downloadImageFromWeb(
@@ -20,7 +20,22 @@ class WebImageDownloader {
         uInt8List: res.bodyBytes,
         imageQuality: imageQuality,
       );
+    } else {
+      throw Exception(res.statusCode);
     }
+    //
+    // try {
+    //   final response = await http.get(url);
+    //   if (response.statusCode != 200) throw HttpException('${response.statusCode}');
+    //   final jsonMap = convert.jsonDecode(response.body);
+    // } on SocketException {
+    //   print('No Internet connection 😑');
+    // } on HttpException {
+    //   print("Couldn't find the post 😱");
+    // } on FormatException {
+    //   print("Bad response format 👎");
+    // }
+    //TODO: add error handling
   }
 
   Future<void> _downloadImageFromUInt8List({
