@@ -9,3 +9,7 @@
 # 0.0.3
 
 Replaced dart:html with universal_html to support every platform
+
+# 1.0.0
+t
+Plugin description changed
