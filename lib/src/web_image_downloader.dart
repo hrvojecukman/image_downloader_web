@@ -23,19 +23,6 @@ class WebImageDownloader {
     } else {
       throw Exception(res.statusCode);
     }
-    //
-    // try {
-    //   final response = await http.get(url);
-    //   if (response.statusCode != 200) throw HttpException('${response.statusCode}');
-    //   final jsonMap = convert.jsonDecode(response.body);
-    // } on SocketException {
-    //   print('No Internet connection 😑');
-    // } on HttpException {
-    //   print("Couldn't find the post 😱");
-    // } on FormatException {
-    //   print("Bad response format 👎");
-    // }
-    //TODO: add error handling
   }
 
   Future<void> _downloadImageFromUInt8List({
