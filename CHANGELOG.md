@@ -17,3 +17,8 @@ Plugin description changed
 # 1.0.1
 
 Added support for downloading images from file bytes and ability to specify image name - Thanks @LucaDillenburg
+
+# 1.0.2
+
+Added new usage documentation in README.md
+

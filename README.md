@@ -17,6 +17,21 @@ Future<void> _downloadImage() async {
 
 &nbsp;
 
+## Download image on web from UInt8List
+
+```dart
+
+final WebImageDownloader _webImageDownloader = WebImageDownloader();
+final uint8List = Uint8List();
+
+Future<void> _downloadImage() async {
+  await _webImageDownloader.downloadImageFromUInt8List(uInt8List: uint8List);
+}
+
+```
+
+&nbsp;
+
 ### Download image with reduced quality
 
 ```dart

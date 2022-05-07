@@ -31,7 +31,7 @@ class WebImageDownloader {
   /// Download image from uInt8List to user device
   Future<void> downloadImageFromUInt8List({
     required Uint8List uInt8List,
-    required double imageQuality,
+    double imageQuality = 0.95,
     String? name,
   }) async {
     final image = await decodeImageFromList(uInt8List);
