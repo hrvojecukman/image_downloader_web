@@ -11,5 +11,9 @@
 Replaced dart:html with universal_html to support every platform
 
 # 1.0.0
-t
+
 Plugin description changed
+
+# 1.0.1
+
+Added support for downloading images from file bytes and ability to specify image name - Thanks @LucaDillenburg

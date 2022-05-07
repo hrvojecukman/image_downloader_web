@@ -5,6 +5,7 @@ import 'package:http/http.dart' as http;
 import 'package:universal_html/html.dart' as html;
 
 class WebImageDownloader {
+  /// Download image from URL to user's device. It works only for Flutter web.
   Future<void> downloadImageFromWeb(
     String url, {
     Map<String, String>? headers,
@@ -27,6 +28,7 @@ class WebImageDownloader {
     }
   }
 
+  /// Download image from uInt8List to user device
   Future<void> downloadImageFromUInt8List({
     required Uint8List uInt8List,
     required double imageQuality,
