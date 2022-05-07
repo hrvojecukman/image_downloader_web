@@ -9,6 +9,7 @@ class WebImageDownloader {
     String url, {
     Map<String, String>? headers,
     double imageQuality = 0.95,
+    String? name,
   }) async {
     final http.Response res = await http.get(
       Uri.parse(url),
@@ -16,18 +17,20 @@ class WebImageDownloader {
     );
 
     if (res.statusCode == 200) {
-      await _downloadImageFromUInt8List(
+      await downloadImageFromUInt8List(
         uInt8List: res.bodyBytes,
         imageQuality: imageQuality,
+        name: name,
       );
     } else {
       throw Exception(res.statusCode);
     }
   }
 
-  Future<void> _downloadImageFromUInt8List({
+  Future<void> downloadImageFromUInt8List({
     required Uint8List uInt8List,
     required double imageQuality,
+    String? name,
   }) async {
     final image = await decodeImageFromList(uInt8List);
 
@@ -59,7 +62,7 @@ class WebImageDownloader {
       final dataUrl = canvas.toDataUrl("image/jpeg", imageQuality);
       final html.AnchorElement anchorElement =
           html.AnchorElement(href: dataUrl);
-      anchorElement.download = dataUrl;
+      anchorElement.download = name ?? dataUrl;
       anchorElement.click();
     });
   }
