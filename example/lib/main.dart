@@ -28,7 +28,6 @@ class ImageDownloaderExample extends StatefulWidget {
 }
 
 class _ImageDownloaderExampleState extends State<ImageDownloaderExample> {
-  final WebImageDownloader _webImageDownloader = WebImageDownloader();
   bool downloading = false;
 
   Future<void> _downloadImage() async {
@@ -36,7 +35,11 @@ class _ImageDownloaderExampleState extends State<ImageDownloaderExample> {
       downloading = true;
     });
     const _url = "https://picsum.photos/200";
-    await _webImageDownloader.downloadImageFromWeb(_url);
+    await WebImageDownloader.downloadImageFromWeb(
+      _url,
+      name: 'image01',
+      imageType: ImageType.png,
+    );
     setState(() {
       downloading = false;
     });
