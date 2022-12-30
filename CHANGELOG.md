@@ -22,3 +22,9 @@ Added support for downloading images from file bytes and ability to specify imag
 
 Added new usage documentation in README.md
 
+# 2.0.0
+
+#### Breaking change: 
+
+Made methods inside WebImageDownloader static and added ImageType
+

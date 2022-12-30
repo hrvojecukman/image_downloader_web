@@ -2,36 +2,10 @@ import 'dart:typed_data';
 
 import 'package:flutter/painting.dart';
 import 'package:http/http.dart' as http;
+import 'package:image_downloader_web/src/image_type.dart';
 import 'package:universal_html/html.dart' as html;
 
-enum ImageType {
-  /// Animated Portable Network Graphics (APNG)
-  apng('image/apng'),
-
-  /// AV1 Image File Format (AVIF)
-  avif('image/avif'),
-
-  /// Graphics Interchange Format (GIF)
-  gif('image/gif'),
-
-  /// Joint Photographic Expert Group image (JPEG)
-  jpeg('image/jpeg'),
-
-  /// Portable Network Graphics (PNG)
-  png('image/png'),
-
-  /// Scalable Vector Graphics (SVG)
-  svg('image/svg+xml'),
-
-  /// Web Picture format (WEBP)
-  webp('image/webp');
-
-  const ImageType(this.format);
-
-  final String format;
-}
-
-abstract class WebImageDownloader {
+class WebImageDownloader {
   /// Download image from URL to user's device. It works only for Flutter web.
   static Future<void> downloadImageFromWeb(
     String url, {

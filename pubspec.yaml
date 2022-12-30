@@ -1,14 +1,16 @@
 name: image_downloader_web
 description: A Flutter plugin for downloading images from URL to user's device. This plugin only works for Flutter web.
-version: 1.0.2
+version: 2.0.0
 repository: https://github.com/hrvojecukman/image_downloader_web
 
 environment:
   sdk: ">=2.18.0 <3.0.0"
-  flutter: 3.3.3
+  flutter: ">=3.3.0"
 
 dependencies:
   flutter:
+    sdk: flutter
+  flutter_web_plugins:
     sdk: flutter
   http: ^0.13.5
   universal_html: ^2.0.8
@@ -18,5 +20,12 @@ dev_dependencies:
     sdk: flutter
   flutter_lints: ^2.0.1
 
-flutter:
 
+
+flutter:
+  plugin:
+    platforms:
+      web:
+
+    funding:
+      - https://www.buymeacoffee.com/hrvojecukman

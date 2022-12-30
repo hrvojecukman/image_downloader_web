@@ -2,15 +2,16 @@
 
 Download images from URL on Flutter Web
 
+<img src="./assets/demo.gif"/>
+
 ## Download image on webb
 
 ```dart
 
-final WebImageDownloader _webImageDownloader = WebImageDownloader();
 const _url = "https://picsum.photos/200";
 
 Future<void> _downloadImage() async {
-  await _webImageDownloader.downloadImageFromWeb(_url);
+  await WebImageDownloader.downloadImageFromWeb(_url);
 }
 
 ```
@@ -21,11 +22,10 @@ Future<void> _downloadImage() async {
 
 ```dart
 
-final WebImageDownloader _webImageDownloader = WebImageDownloader();
 final uint8List = Uint8List();
 
 Future<void> _downloadImage() async {
-  await _webImageDownloader.downloadImageFromUInt8List(uInt8List: uint8List);
+  await WebImageDownloader.downloadImageFromUInt8List(uInt8List: uint8List);
 }
 
 ```
@@ -36,11 +36,10 @@ Future<void> _downloadImage() async {
 
 ```dart
 
-final WebImageDownloader _webImageDownloader = WebImageDownloader();
 const _url = "https://picsum.photos/200";
 
 Future<void> _downloadImage() async {
-  await _webImageDownloader.downloadImageFromWeb(_url, imageQuality: 0.5);
+  await WebImageDownloader.downloadImageFromWeb(_url, imageQuality: 0.5);
 }
 ```
 
@@ -50,13 +49,12 @@ Future<void> _downloadImage() async {
 
 ```dart
 
-final WebImageDownloader _webImageDownloader = WebImageDownloader();
 const _url = "https://picsum.photos/200";
 
 Future<void> _downloadImage() async {
   final Map<String, String> headers = {
     'authorization': token,
   };
-  await _webImageDownloader.downloadImageFromWeb(_url, headers: headers);
+  await WebImageDownloader.downloadImageFromWeb(_url, headers: headers);
 }
 ```
