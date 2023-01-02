@@ -1,30 +1,35 @@
-## 0.0.1
+## 2.0.1
 
-* Support for downloading images from web
+README.md updates
 
-# 0.0.2
+## 2.0.0
 
-* Added README.md
+#### Breaking change:
 
-# 0.0.3
+Made methods inside WebImageDownloader static and added ImageType
 
-Replaced dart:html with universal_html to support every platform
-
-# 1.0.0
-
-Plugin description changed
-
-# 1.0.1
-
-Added support for downloading images from file bytes and ability to specify image name - Thanks @LucaDillenburg
-
-# 1.0.2
+## 1.0.2
 
 Added new usage documentation in README.md
 
-# 2.0.0
+## 1.0.1
 
-#### Breaking change: 
+Added support for downloading images from file bytes and ability to specify image name - Thanks
+@LucaDillenburg
 
-Made methods inside WebImageDownloader static and added ImageType
+## 1.0.0
+
+Plugin description changed
+
+##0.0.3
+
+Replaced dart:html with universal_html to support every platform
+
+## 0.0.2
+
+* Added README.md
+
+## 0.0.1
+
+* Support for downloading images from web
 

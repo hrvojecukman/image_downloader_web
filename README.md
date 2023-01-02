@@ -2,7 +2,7 @@
 
 Download images from URL on Flutter Web
 
-<img src="./assets/demo.gif"/>
+![Usage example](https://hrvojecukman.github.io/image_downloader_web/demo.gif)
 
 ## Download image on webb
 
