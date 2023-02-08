@@ -12,7 +12,7 @@ enum ImageType {
   jpeg('image/jpeg'),
   
   /// Joint Photographic Expert Group image (JPEG)
-  jpeg('image/jpg'),
+  jpg('image/jpg'),
 
   /// Portable Network Graphics (PNG)
   png('image/png'),
