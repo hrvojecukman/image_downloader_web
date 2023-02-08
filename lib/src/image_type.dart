@@ -10,6 +10,9 @@ enum ImageType {
 
   /// Joint Photographic Expert Group image (JPEG)
   jpeg('image/jpeg'),
+  
+  /// Joint Photographic Expert Group image (JPEG)
+  jpeg('image/jpg'),
 
   /// Portable Network Graphics (PNG)
   png('image/png'),
