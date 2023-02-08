@@ -24,6 +24,7 @@ class WebImageDownloader {
         uInt8List: res.bodyBytes,
         imageQuality: imageQuality,
         name: name,
+        imageType: imageType,
       );
     } else {
       throw Exception(res.statusCode);
