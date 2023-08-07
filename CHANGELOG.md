@@ -1,3 +1,7 @@
+## 2.0.4
+
+Dart SDK update
+
 ## 2.0.3
 
 Http package update
