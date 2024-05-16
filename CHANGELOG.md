@@ -1,3 +1,7 @@
+## 2.0.5
+
+Added missing imageType param. By @jtreitz
+
 ## 2.0.4
 
 Dart SDK update
