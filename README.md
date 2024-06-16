@@ -32,19 +32,6 @@ Future<void> _downloadImage() async {
 
 &nbsp;
 
-### Download image with reduced quality
-
-```dart
-
-const _url = "https://picsum.photos/200";
-
-Future<void> _downloadImage() async {
-  await WebImageDownloader.downloadImageFromWeb(_url, imageQuality: 0.5);
-}
-```
-
-&nbsp;
-
 ### Download image with custom headers
 
 ```dart
